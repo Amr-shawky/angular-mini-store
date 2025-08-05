@@ -1,1 +1,17 @@
-<p>products works!</p>
+<p class="msg">🛍️ Products works!</p>
+
+<div class="products-grid">
+  @for (product of products; track product.id) {
+    <div class="product-card">
+      <img class="product-image" [src]="product.imageUrl" [alt]="product.name" />
+      <h3>{{ product.name }}</h3>
+      <p class="description">{{ product.description }}</p>
+      <p class="price">
+        <fa-icon [icon]="['fas', 'tag']"></fa-icon> {{ product.price }} EGP
+      </p>
+      <button class="buy-btn">
+        <fa-icon [icon]="['fas', 'shopping-cart']"></fa-icon> Add to Cart
+      </button>
+    </div>
+  }
+</div>

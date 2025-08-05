@@ -1,1 +1,59 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <fa-icon [icon]="faCode" class="me-2"></fa-icon> MyApp
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['home']"
+            routerLinkActive="active"
+          >
+            <fa-icon [icon]="faHome" class="me-1"></fa-icon> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['portfolio']"
+            routerLinkActive="active"
+          >
+            <fa-icon [icon]="faBriefcase" class="me-1"></fa-icon> Portfolio
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['contact']"
+            routerLinkActive="active"
+          >
+            <fa-icon [icon]="faEnvelope" class="me-1"></fa-icon> Contact
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['settings']"
+            routerLinkActive="active"
+          >
+            <fa-icon [icon]="faCog" class="me-1"></fa-icon> Settings
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
