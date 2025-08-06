@@ -21,7 +21,7 @@ export class Products {
     name: `Product ${i + 1}`,
     description: `This is a great product that you will love!`,
     price: parseFloat((Math.random() * 100 + 10).toFixed(2)),
-    imageUrl: `imgs/img${i + 1}.jpg`
+    imageUrl: `https://picsum.photos/id/${i + 1}/5000/3333`
   }));
   constructor(library: FaIconLibrary) {
     library.addIconPacks(fas);
