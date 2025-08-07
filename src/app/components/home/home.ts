@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Products } from '../products/products';
-import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { fas } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faShoppingCart, faShippingFast, faTags, faShieldAlt, faStar } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +10,9 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './home.css'
 })
 export class Home {
-  constructor(library: FaIconLibrary) {
-    library.addIconPacks(fas);
-  }
-
+  faShoppingCart = faShoppingCart;
+  faShippingFast = faShippingFast;
+  faTags = faTags;
+  faShieldAlt = faShieldAlt;
+  faStar = faStar;
 }

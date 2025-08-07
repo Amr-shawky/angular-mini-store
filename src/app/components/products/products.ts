@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { fas } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { faShoppingCart, faTag } from '@fortawesome/free-solid-svg-icons';
 
 interface Product {
   id: number;
@@ -23,7 +23,7 @@ export class Products {
     price: parseFloat((Math.random() * 100 + 10).toFixed(2)),
     imageUrl: `https://picsum.photos/id/${i + 1}/5000/3333`
   }));
-  constructor(library: FaIconLibrary) {
-    library.addIconPacks(fas);
-  }
+
+  faShoppingCart = faShoppingCart;
+  faTag = faTag;
 }

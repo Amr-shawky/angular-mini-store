@@ -7,24 +7,24 @@
       <button>Start Exploring</button>
     </div>
     <div class="hero-icon">
-      <fa-icon [icon]="['fas', 'shopping-cart']" size="6x"></fa-icon>
+      <fa-icon [icon]="faShoppingCart" size="6x"></fa-icon>
     </div>
   </section>
 
   <!-- Features Section -->
   <section class="features">
     <div class="feature">
-      <fa-icon [icon]="['fas', 'shipping-fast']" size="2x"></fa-icon>
+      <fa-icon [icon]="faShippingFast" size="2x"></fa-icon>
       <h3>Fast Shipping</h3>
       <p>Get your orders delivered to your doorstep in record time.</p>
     </div>
     <div class="feature">
-      <fa-icon [icon]="['fas', 'tags']" size="2x"></fa-icon>
+      <fa-icon [icon]="faTags" size="2x"></fa-icon>
       <h3>Best Deals</h3>
       <p>We offer competitive prices on all our products.</p>
     </div>
     <div class="feature">
-      <fa-icon [icon]="['fas', 'shield-alt']" size="2x"></fa-icon>
+      <fa-icon [icon]="faShieldAlt" size="2x"></fa-icon>
       <h3>Secure Shopping</h3>
       <p>Shop with confidence with our secure payment options.</p>
     </div>
@@ -32,7 +32,7 @@
 
   <!-- Recommended Products -->
   <section class="recommended">
-    <h2><fa-icon [icon]="['fas', 'star']"></fa-icon> Recommended Products</h2>
+    <h2><fa-icon [icon]="faStar"></fa-icon> Recommended Products</h2>
     @defer (on idle) {
       <app-products></app-products>
     }
