@@ -33,8 +33,12 @@
   <!-- Recommended Products -->
   <section class="recommended">
     <h2><fa-icon [icon]="faStar"></fa-icon> Recommended Products</h2>
-    @defer (on idle) {
+    @defer (on hover) {
       <app-products></app-products>
     }
+    @placeholder {
+      <p class="loading">Loading products...</p>
+    }
   </section>
+
 </div>
